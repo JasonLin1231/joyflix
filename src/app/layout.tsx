@@ -98,6 +98,7 @@ export default async function RootLayout({
           name='viewport'
           content='width=device-width, initial-scale=1.0, viewport-fit=cover'
         />
+        <meta name="referrer" content="no-referrer" />
         <link rel='apple-touch-icon' href='/icons/icon-192x192.png' />
         {/* 
           为移动端浏览器状态栏设置主题颜色。
