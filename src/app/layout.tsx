@@ -57,8 +57,9 @@ export default async function RootLayout({
   let doubanProxyType = process.env.NEXT_PUBLIC_DOUBAN_PROXY_TYPE || 'direct';
   let doubanProxy = process.env.NEXT_PUBLIC_DOUBAN_PROXY || '';
   let doubanImageProxyType =
-    process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'img3';
-  let doubanImageProxy = process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || '';
+    process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE || 'custom';
+  let doubanImageProxy =
+    process.env.NEXT_PUBLIC_DOUBAN_IMAGE_PROXY || 'https://images.weserv.nl/?url=';
   let customCategories = (RuntimeConfig as any).custom_category?.map((category: any) => ({
       name: 'name' in category ? category.name : '',
       type: category.type,
